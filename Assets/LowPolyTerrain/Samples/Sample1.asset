@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1698319197, guid: c9c2c29eb264b5e49a30aa0c74da7302, type: 3}
+  m_Name: Sample1
+  m_EditorClassIdentifier: 
+  Name: Terrain
+  IsSingleMesh: 1
+  Material: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  Fractal:
+    Type: 0
+    Octaves: 5
+    Lacunarity: 2
+    H: 0.8
+    Offset: 0.1
+    Seed: 0
+    NumFaults: 10
+  Geometry:
+    PositionMagnitudeScale: 500
+    PositionFrequencyScale: 0.002
+    WarpFrequencyRatio: 1
+    WarpMagnitudeScale: 0.5
+    TerraceMagnitudeRatio: 0.25
+    TerraceFrequencyRatio: 10
+    HeightDropoffScale: 0
+  Size:
+    Width: 1000
+    Length: 1000
+    Height: 400
+  NumDivisions: 5
+  RemoveIsolatedVertices: 0
+  SampleNormals: 1
+  NormalSmoothing: 10
+  GenerateTexture: 0
+  TextureSize: 512
+  GetColor: {fileID: 11500000, guid: ef1e588a4350d124aae6dafcf1101697, type: 3}
+  RadialDampening: 1
+  OuterRim: 500
+  DetesselationLevel: 0.5
