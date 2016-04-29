@@ -19,11 +19,12 @@ public class Practicemove : MonoBehaviour {
 			moving = false;
 		}
 
-		Vector3 targetDir = goTarget.position - transform.position;
-		float step = speed * Time.deltaTime;
-		Vector3 newDir = Vector3.RotateTowards (transform.forward, targetDir, step, 0.0F);
-		Debug.DrawRay (transform.position, newDir, Color.red);
-		transform.rotation = Quaternion.LookRotation (newDir);
-	
+		if (moving == true) {
+			Vector3 targetDir = goTarget.position - transform.position;
+			float step = speed * Time.deltaTime;
+			Vector3 newDir = Vector3.RotateTowards (transform.forward, targetDir, step, 0.0F);
+			Debug.DrawRay (transform.position, newDir, Color.red);
+			transform.rotation = Quaternion.LookRotation (newDir);
+		}
 	}
 }
